@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+			
+* {
+    font-family: 'Libre Franklin', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: transparent;
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    padding: 5px 50px;
+    height: 100px;
+    background: #D8D8D8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.glowing-beam {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, rgba(54, 208, 255, 0.4), transparent);
+}
+
+.navigation a {
+    font-size: 18px;
+    font-weight: 100;
+    color: black;
+    text-decoration: none;
+    margin-left: 10px;
+    position: relative;
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 1.5px;
+    background: #3bbedf;
+    transform: scaleX(0);
+    transition: transform 200ms;
+}
+
+.navigation a:hover::after {
+    transform: scaleX(1);
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: translateX(-50%) scale(1.1);
+}
+
+.login-button {
+    position: relative;
+    font-size: 16px;
+    font-weight: 900;
+    color: black;
+    text-decoration: none;
+    margin-left: 40px;
+    width: 150px;
+    height: 40px;
+    background: #EFEFEF;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+.login-button:hover {
+    background: #3bbedf;
+}
+
+.section-1 {
+    position: relative;
+    height: 600px;
+    width: 100%;
+    display: flex;
+}
+.minecraft-1 img {
+    position: absolute;
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.text-1 {
+    position: absolute;
+    font-size: 90px;
+    font-weight: 900;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.text-1 span {
+    color: #0DEBF9;
+}
+
+.section-2 {
+    position: relative;
+    height: 800px;
+    width: 100%;
+    display: flex;
+}
+
+.minecraft-2 img {
+    position: absolute;
+    height: 800px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.text-2 {
+    position: absolute;
+    top: 50%;
+    left:25%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 50px;
+}
+
+.text-2 t1 {
+    color: #0DEBF9;
+    font-weight: 900;
+}
+
+.text-2 t2 {
+    font-weight: 900;
+}
+
+.minecraft-3 video {
+    position: absolute;
+    display: flex;
+    align-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-10%, -50%);
+    height: 500px;
+    width: auto;
+}
+
+.footer {
+    background-color: #EFEFEF;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    text-align: center;
+}
+
+.footer-center {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-weight: 900;
+    font-size: 40px;
+}
+
+.footer-sections {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+    line-height: 2.5;
+    font-size: 18px;
+}
+
+.footer-section:last-child {
+    text-align: center;
+}
+
+.footer-section p1 {
+    font-weight: 900;
+    font-size: 20px;
+}
