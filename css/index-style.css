@@ -277,6 +277,7 @@ header {
 }
 
 .text {
+    background: seagreen;
     width: 25%;
     position: relative;
     transform: translateX(50%);
