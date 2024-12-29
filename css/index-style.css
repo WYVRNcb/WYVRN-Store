@@ -1,7 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
-			
 * {
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: 'Grenze';
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -37,12 +35,22 @@ header {
     background-image: linear-gradient(to bottom, rgba(54, 208, 255, 0.4), transparent);
 }
 
-.navigation a {
-    font-size: 18px;
-    font-weight: 100;
-    color: black;
+.navigation ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    float: left;
+}
+
+.navigation ul li {
+    margin: 0 20px 0 20px;
+}
+
+.navigation ul li a {
+    font-size: 20px;
+    font-weight: 800;
     text-decoration: none;
-    margin-left: 10px;
+    color: black;
     position: relative;
 }
 
@@ -55,7 +63,8 @@ header {
     height: 1.5px;
     background: #3bbedf;
     transform: scaleX(0);
-    transition: transform 200ms;
+    transform-origin: center;
+    transition: transform 200ms ease-in-out;
 }
 
 .navigation a:hover::after {
@@ -268,24 +277,24 @@ header {
     text-decoration: underline;
 }
 
+/* Section 1 */
+
 .section-1 {
     background: #D8D8D8;
-    position: relative;
     display: flex;
-    align-items: flex-start;
-    padding: 20px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .text {
     background: seagreen;
-    width: 25%;
-    position: relative;
-    transform: translateX(50%);
+    width: 350px;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding: 20px;
 }
 
 .text h2 {
@@ -295,9 +304,8 @@ header {
 
 .text p {
     font-size: 22px;
-    font-weight: 100;
-    margin: 60px 0;
-    padding: 20px;
+    font-weight: 300;
+    margin-top: 50px;
 }
 
 .learn-more-btn {
@@ -313,24 +321,20 @@ header {
     border-radius: 200px;
     cursor: pointer;
     transition: 200ms;
+    margin-top: 100px;
 }
 .learn-more-btn:hover {
     background: rgba(0, 0, 0, 0.8);
 }
 
-.wyvrn-image img {
-    width: 100%;
-    height: 100%;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
-}
 .wyvrn-image {
-    width: 37.5%;
-    height: auto;
-    position: relative;
-    transform: translateX(65%);
     display: flex;
-    justify-content: center;
-    padding: 20px;
+    align-items: center;
+}
+.wyvrn-image img {
+    width: 600px;
+    height: 600px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
 }
 
 .section-2 {
@@ -446,20 +450,62 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: 50px;
 }
 
-.socials img {
+.instagram {
+    text-align: center;
+    margin: 0 50px 0 50px;
+}
+
+.instagram img {
     width: 150px;
     height: auto;
-    margin: 0 100px;
 }
 
-.socials p {
-    text-align: center;
+.instagram p {
     margin-top: 20px;
-    font-size: 18px;
-    font-weight: 500;
+}
+
+.youtube {
+    text-align: center;
+    margin: 0 50px 0 50px;
+}
+
+.youtube img {
+    width: 150px;
+    height: auto;
+}
+
+.youtube p {
+    margin-top: 20px;
+}
+
+.soundcloud {
+    text-align: center;
+    margin: 0 50px 0 50px;
+}
+
+.soundcloud img {
+    width: 150px;
+    height: auto;
+}
+
+.soundcloud p {
+    margin-top: 20px;
+}
+
+.discord {
+    text-align: center;
+    margin: 0 50px 0 50px;
+}
+
+.discord img {
+    width: 150px;
+    height: auto;
+}
+
+.discord p {
+    margin-top: 20px;
 }
 
 .footer {
