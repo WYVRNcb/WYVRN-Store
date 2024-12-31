@@ -352,6 +352,11 @@ header {
 .product1 img {
     width: 200px;
     height: auto;
+    transition: transform 0.3s ease;
+}
+
+.product1 img:hover {
+    transform: scale(1.1);
 }
 
 .product1 p {
@@ -373,6 +378,11 @@ header {
 .product2 img {
     width: 300px;
     height: auto;
+    transition: transform 0.3s ease;
+}
+
+.product2 img:hover {
+    transform: scale(1.1);
 }
 
 .product2 p {
@@ -394,6 +404,11 @@ header {
     width: 200px;
     height: auto;
     padding: 40px;
+    transition: transform 0.3s ease;
+}
+
+.product3 img:hover {
+    transform: scale(1.1);
 }
 
 .product3 p {
@@ -476,6 +491,11 @@ header {
 .youtube img {
     width: 125px;
     height: auto;
+    transition: transform 0.3s ease;
+}
+
+.youtube img:hover {
+    transform: scale(1.1);
 }
 
 .youtube p {
@@ -491,6 +511,11 @@ header {
 .soundcloud img {
     width: 125px;
     height: auto;
+    transition: transform 0.3s ease;
+}
+
+.soundcloud img:hover {
+    transform: scale(1.1);
 }
 
 .soundcloud p {
@@ -506,6 +531,11 @@ header {
 .discord img {
     width: 125px;
     height: auto;
+    transition: transform 0.3s ease;
+}
+
+.discord img:hover {
+    transform: scale(1.1);
 }
 
 .discord p {
