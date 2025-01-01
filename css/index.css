@@ -597,6 +597,5 @@ header {
 .contact p {
     font-weight: 200;
     font-size: 18px;
-    user-select: all;
-    
+    user-select: text;
 }
